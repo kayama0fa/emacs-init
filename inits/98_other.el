@@ -14,7 +14,8 @@
 ;; 読みやすくなる。Stackoverflowで見つけた任意のカスタマイズをしたい場
 ;; 合dired上でC-u sのあとミニバッファで指定する
 (when (equal system-type 'darwin)
-  (setq dired-listing-switches "-alhT"))
+  (setq dired-listing-switches "-alh"))
+;; -Tオプションをつけると、正常に動作しない（宿題）
 (when (equal system-type 'gnu/linux)
   (setq dired-listing-switches "-alh --time-style=long-iso"))
 
