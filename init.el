@@ -58,32 +58,6 @@
 ;; (autoload 'ansi-color-for-comint-mode-on "ansi-color" "Set `ansi-color-for-comint-mode' to t." t)
 ;; (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-;; ;; ;;;====================================
-;; ;; ;;;  Buffer 設定
-;; ;; ;;;===================================
-;; ;; ;;; <<2013/04/22>> anything.elとかぶるので、コメントアウト
-;; ;; ;;; iswitchb は、バッファ名の一部の文字を入力することで、
-;; ;; ;;; 選択バッファの絞り込みを行う機能を実現します。
-;; ;; ;;; バッファ名を先頭から入力する必要はなく、とても使いやすくなります。
-;; ;; (iswitchb-mode 1) ;;iswitchbモードON
-;; ;; ;;; C-f, C-b, C-n, C-p で候補を切り替えることができるように。
-;; ;; (add-hook 'iswitchb-define-mode-map-hook
-;; ;;       (lambda ()
-;; ;;         (define-key iswitchb-mode-map "\C-n" 'iswitchb-next-match)
-;; ;;         (define-key iswitchb-mode-map "\C-p" 'iswitchb-prev-match)
-;; ;;         (define-key iswitchb-mode-map "\C-f" 'iswitchb-next-match)
-;; ;;         (define-key iswitchb-mode-map "\C-b" 'iswitchb-prev-match)))
-;; ;; ;;; iswitchb で選択中の内容を表示
-;; ;; (defadvice iswitchb-exhibit
-;; ;;   (after iswitchb-exhibit-with-display-buffer activate)
-;; ;;   "選択している buffer を window に表示してみる。"
-;; ;;   (when (and (eq iswitchb-method iswitchb-default-method)
-;; ;;              iswitchb-matches)
-;; ;;     (select-window (get-buffer-window (cadr (buffer-list))))
-;; ;;     (let ((iswitchb-method 'samewindow))
-;; ;;       (iswitchb-visit-buffer (get-buffer (car iswitchb-matches))))
-;; ;;     (select-window (minibuffer-window))))
-
 ;; ;;====================================
 ;; ;;全角スペースとかに色を付ける
 ;; ;;何色が表示できるか確認するには、M-x list-color-disply
@@ -120,20 +94,6 @@
 ;;   (interactive)
 ;;   (save-excursion (mark-defun)
 ;;                   (perltidy-region)))
-
-
-;; ;; php-mode
-;; (require 'php-mode)
-;; (setq php-mode-force-pear t) ;PEAR規約のインデント設定にする
-
-;; ;;tramp
-;; ;; C+x f /ssh:user@host:/path/to/file
-;; (require 'tramp)
-;; (setq tramp-default-method "ssh")
-;; ;; TRAMPリモート接続時のPATH設定を改善させる
-;; ;; (例:リモートでのhg(version control)作業)
-;; ;; リモートのバッファ上でM-Shift-! echo PATHをしてみるとよく分かる。
-;; (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 
 
 ;; ;; 補完に大文字小文字の区別をしない(でも、うまく動かない)
