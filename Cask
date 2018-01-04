@@ -36,3 +36,7 @@
 (depends-on "yaml-mode")
 ;; 最近のファイルを開く
 (depends-on "recentf-ext")
+;; solarized テーマ
+(depends-on "color-theme-solarized")
+;; Markdown mode
+(depends-on "markdown-mode")
