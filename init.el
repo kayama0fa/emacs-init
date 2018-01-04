@@ -28,50 +28,9 @@
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
 ;; (ac-config-default)
 
-
-
-;; (defun perltidy-region ()               ;選択regionをperltidy
-;;    "Run perltidy on the current region."
-;;    (interactive)
-;;    (save-excursion
-;;      (shell-command-on-region (point) (mark) "perltidy -q" nil t)))
-;; (defun perltidy-defun ()                ;開いているソースをperltidy
-;;   "Run perltidy on the current defun."
-;;   (interactive)
-;;   (save-excursion (mark-defun)
-;;                   (perltidy-region)))
-
-
-;; ;; 補完に大文字小文字の区別をしない(でも、うまく動かない)
-;; (setq completion-ignore-case t)
-
-
-;; ;; ediff関連のバッファを1つのフレームにまとめる
-;; (setq ediff-windows-setup-function 'ediff-setup-windows-plain)
-
 ;; (add-to-list 'load-path "~/.emacs.d/auto-install")
 ;; (require 'anything-startup)
 
-
-;; ;; bookmark
-;; ;; C-x r m : ブックマークを設定する   : bookmark-set
-;; ;; C-x r l : ブックマークリスト表示   : bookmark-bmenu-list
-;; ;; ブックマークを変更したら即保存する
-;; (setq bookmark-save-flag 1)
-;; ;; anythingでおなじみの絞り込みできるブックマーク機能
-;; (global-set-key "\C-xrl" 'anything-bookmarks)
-;; ;; 超整理法(使った物が上に)
-;; (progn
-;;   (setq bookmark-sort-flag nil)
-;;   (defun bookmark-arrange-latest-top ()
-;;     (let ((latest (bookmark-get-bookmark bookmark)))
-;;       (setq bookmark-alist (cons latest (delq latest bookmark-alist))))
-;;     (bookmark-save))
-;;   (add-hook 'bookmark-after-jump-hook 'bookmark-arrange-latest-top))
-
-;; ;; (add-to-list 'load-path "~/.emacs.d/yasnippet")
-;; ;; (require 'yasnippet)
-;; ;; (yas-global-mode 1)
 
 ;; (require 'multiple-cursors)
 ;; ;; When you have an active region that spans multiple lines, the following will

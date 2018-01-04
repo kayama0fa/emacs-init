@@ -31,3 +31,14 @@
        '("\\.pm.in$" . cperl-mode)
        '("\\.t$"     . cperl-mode)
        auto-mode-alist)))
+
+;; (defun perltidy-region ()               ;選択regionをperltidy
+;;    "Run perltidy on the current region."
+;;    (interactive)
+;;    (save-excursion
+;;      (shell-command-on-region (point) (mark) "perltidy -q" nil t)))
+;; (defun perltidy-defun ()                ;開いているソースをperltidy
+;;   "Run perltidy on the current defun."
+;;   (interactive)
+;;   (save-excursion (mark-defun)
+;;                   (perltidy-region)))
