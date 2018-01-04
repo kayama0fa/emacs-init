@@ -2,7 +2,7 @@
 ;; ;;       load-path))
 ;; (setq erlang-root-dir "/usr/local/erlang")
 ;; (setq exec-path (cons "/usr/local/erlang/bin" exec-path))
-;; (require 'erlang-start)
+(require 'erlang-start)
 
 ;; ;; auto-completeをerlang-modeで有効にさせる
 ;; (add-to-list 'ac-modes 'erlang-mode)

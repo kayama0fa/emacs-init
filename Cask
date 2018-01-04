@@ -50,3 +50,6 @@
 
 ;; スペースやタブなどの不可視文字を見えるようにするモード
 (depends-on "whitespace")
+
+;; Erlang mode
+(depends-on "erlang")
