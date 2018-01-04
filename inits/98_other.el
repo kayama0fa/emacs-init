@@ -13,7 +13,10 @@
 ;; Diredでの表示のカスタマイズ。"h"を追加することで、ファイルサイズが
 ;; 読みやすくなる。Stackoverflowで見つけた任意のカスタマイズをしたい場
 ;; 合dired上でC-u sのあとミニバッファで指定する
-(setq dired-listing-switches "-alh --time-style=long-iso")
+(when (equal system-type 'darwin)
+  (setq dired-listing-switches "-alhT"))
+(when (equal system-type 'gnu/linux)
+  (setq dired-listing-switches "-alh --time-style=long-iso"))
 
 ;; http://kakurasan.blogspot.jp/2015/05/dired-filemanager-renamer.html
 ;; y/nのどちらかのキーを押すだけでよくなる設定
@@ -25,7 +28,7 @@
 
 ;; http://ethanschoonover.com/solarized
 ;; 目に優しいカラーテーマ。
-(load-theme 'solarized t)
+(load-theme 'sanityinc-solarized-light t)
 
 ;;; カーソルの位置が何文字目か、何行目かを表示する
 (column-number-mode t)

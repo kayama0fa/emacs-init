@@ -28,15 +28,22 @@
 
 ;; パッケージ分割
 (depends-on "init-loader")
+
 ;; Gerrit用のプラグイン
 (depends-on "magit-gerrit" :git:"https://github.com/terranpro/magit-gerrit")
+
 ;; 比較的まともなシェル
 (depends-on "multi-term")
+
 ;; YAML mode
 (depends-on "yaml-mode")
+
 ;; 最近のファイルを開く
 (depends-on "recentf-ext")
+
 ;; solarized テーマ
-(depends-on "color-theme-solarized")
+;; (depends-on "color-theme-solarized") ;; これはイマイチだった
+(depends-on "color-theme-sanityinc-solarized")
+
 ;; Markdown mode
 (depends-on "markdown-mode")
