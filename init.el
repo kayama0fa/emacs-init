@@ -29,36 +29,6 @@
 ;; (ac-config-default)
 
 
-;; ;; Insert spaces instead of tabs
-;; (setq-default indent-tabs-mode nil)
-;; (setq-default show-training-whitespace t)
-
-;; ;; Set line width to 78 columns
-;; (setq fill-column 79)
-;; (setq auto-fill-mode t)
-
-
-;; ;; 何ができるのか?
-;; ;;
-;; ;; show-paren は対応する括弧をハイライトすることができますが， 
-;; ;; mic-paren ならその間の文字を強調して表示することができます．
-;; (progn
-;;   (require 'mic-paren)
-;;   (paren-activate)                      ; activating
-;;   ;; boldはカッコ内をボールド表示 regionはカッコ内をリージョンカラーで表示
-;; ;;   (setq paren-match-face 'bold)
-;;   (setq paren-match-face 'region)
-;;   (setq paren-sexp-mode t)
-;;   )
-;; ;; M-! のコマンドを補完することができる
-;; (require 'shell-command)
-;; (shell-command-completion-mode)
-;; ;; shell上でカラーを正常に表示させるために必要
-;; ;; http://wiki.livedoor.jp/eruvasu/d/emacs-shell-mode
-;; (autoload 'ansi-color-for-comint-mode-on "ansi-color" "Set `ansi-color-for-comint-mode' to t." t)
-;; (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
-
-
 
 ;; (defun perltidy-region ()               ;選択regionをperltidy
 ;;    "Run perltidy on the current region."
@@ -76,41 +46,12 @@
 ;; (setq completion-ignore-case t)
 
 
-;; ;; ;; ruby-mode
-;; ;; (autoload 'ruby-mode "ruby-mode" " for editing ruby source files" t)
-;; ;; (setq auto-mode-alist (cons '("\\.rb$" . ruby-mode) auto-mode-alist))
-;; ;; (setq interpreter-mode-alist (append '(("ruby" . ruby-mode)) interpreter-mode-alist))
-;; ;; (autoload 'run-ruby "inf-ruby" "Run an inferior Ruby process")
-;; ;; (autoload 'inf-ruby-keys "inf-ruby" "Set local key defs for inf-ruby in ruby-mode")
-;; ;; (add-hook 'ruby-mode-hook '(lambda () (inf-ruby-keys)))
-
-;; ;; auto-install.el
-;; (require 'auto-install)
-;; ;; auto installによりインストールされる先
-;; (setq auto-install-directory "~/.emacs.d/auto-install/")
-;; ;; ;; 起動時にEmacsWikiのページ名を補完候補に加える
-;; ;; (auto-install-update-emacswiki-package-name t)
-;; ;; install-elisp.el互換モードにする
-;; (auto-install-compatibility-setup)
 ;; ;; ediff関連のバッファを1つのフレームにまとめる
 ;; (setq ediff-windows-setup-function 'ediff-setup-windows-plain)
 
 ;; (add-to-list 'load-path "~/.emacs.d/auto-install")
 ;; (require 'anything-startup)
 
-
-;; ;; (setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.15/emacs"
-;; ;;       load-path))
-;; (setq erlang-root-dir "/usr/local/erlang")
-;; (setq exec-path (cons "/usr/local/erlang/bin" exec-path))
-;; (require 'erlang-start)
-
-;; ;; auto-completeをerlang-modeで有効にさせる
-;; (add-to-list 'ac-modes 'erlang-mode)
-;; ;; erlangのインデントモード設定
-;; (setq erlang-indent-level 4) ;; 単位はspace(4なら4spece分のインデント)
-;; (setq erlang-indent-line  4)
-;; (setq erlang-indent-guard 4)
 
 ;; ;; bookmark
 ;; ;; C-x r m : ブックマークを設定する   : bookmark-set
@@ -151,13 +92,6 @@
 ;; ;; first disable multiple regions before disabling multiple cursors. If you want to
 ;; ;; insert a newline in multiple-cursors-mode, use `C-j`.
 
-;; ;; ruby-modeでキーがバッティングしている？
-;; ;; 2014-05-19 : 使いたいから、ruby-modeをコメントアウト
-;; ;; 2014-05-20 : C-M-fが頻繁に使うバインドなので、C-M-?をC-S-?にしてみる。>上手くいかない
-;; ;; カーソルキーを使う案もあるが、頻繁に使うので、ホームポジションを崩すキーを使いたくない。
-;; ;; 2014-05-21 : vim型の配列では、C-M-lがshell上のキーバインドとかぶる。
-
-
 ;; ;; |-----------|-------------------|--
 ;; ;; |M-.        |find-tag           |入力した名前の関数にジャンプ
 ;; ;; |M-*        |pop-tag-mark       |ジャンプしたあと元に戻る
@@ -176,15 +110,6 @@
 ;; ;; TAGファイルの生成は、
 ;; ;; "ctags -eR"で行う。
 
-
-;; ;; regionで囲んだ範囲内の行数、文字数を表示する
-;; (defun count-lines-and-chars ()
-;;   (if mark-active
-;;       (format "%d lines,%d chars "
-;;               (count-lines (region-beginning) (region-end))
-;;               (- (region-end) (region-beginning)))
-;;     ;;(count-lines-region (region-beginning) (region-end)) ;; これだとエコーエリアがチラつく
-;;     ""))
 
 ;; (add-to-list 'default-mode-line-format
 ;;                           '(:eval (count-lines-and-chars)))
