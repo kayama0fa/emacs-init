@@ -7,9 +7,7 @@ my emacs init.el, inits/, Cask, etc.
 * emacsの設定整理
     * caskの導入
     * 設定ファイルの分割
-    * GitHubに登録、管理
     * .emacsを.emacs.d/init.elに移動
-    * .emacs持って帰って、うちで作業かなぁ
     * GitHubの使い方忘れたので、それの再勉強
 
 ## 構成
