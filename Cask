@@ -47,3 +47,6 @@
 
 ;; Markdown mode
 (depends-on "markdown-mode")
+
+;; スペースやタブなどの不可視文字を見えるようにするモード
+(depends-on "whitespace")

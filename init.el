@@ -58,30 +58,6 @@
 ;; (autoload 'ansi-color-for-comint-mode-on "ansi-color" "Set `ansi-color-for-comint-mode' to t." t)
 ;; (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-;; ;;====================================
-;; ;;全角スペースとかに色を付ける
-;; ;;何色が表示できるか確認するには、M-x list-color-disply
-;; ;;====================================
-;; (defface my-face-b-1 '((t (:background "color-228"))) nil)
-;; (defface my-face-b-2 '((t (:background "color-229"))) nil)
-;; (defface my-face-u-1 '((t (:foreground "brightwhite" :underline t))) nil)
-;; (defvar my-face-b-1 'my-face-b-1)
-;; (defvar my-face-b-2 'my-face-b-2)
-;; (defvar my-face-u-1 'my-face-u-1)
-;; (defadvice font-lock-mode (before my-font-lock-mode ())
-;;             (font-lock-add-keywords
-;;                  major-mode
-;;                     '(
-;;                            ("　" 0 my-face-b-1 append)
-;;                            ("\t" 0 my-face-b-2 append)
-;;                            ("[ ]+$" 0 my-face-u-1 append)
-;;           )))
-;; (ad-enable-advice 'font-lock-mode 'before 'my-font-lock-mode)
-;; (ad-activate 'font-lock-mode)
-;; (add-hook 'find-file-hooks '(lambda ()
-;;                               (if font-lock-mode nil
-;;                                 (font-lock-mode t))))
-
 
 
 ;; (defun perltidy-region ()               ;選択regionをperltidy

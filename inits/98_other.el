@@ -71,3 +71,40 @@
 ;; default to better frame titles
 (setq frame-title-format
       (concat  "%b - emacs@" (system-name)))
+
+;; 全角スペースとかに色を付ける
+;; 何色が表示できるか確認するには、M-x list-color-disply
+;; todo: 要調整
+;; 引用元: http://cortyuming.hateblo.jp/entry/2016/07/17/160238
+(progn
+  (require 'whitespace)
+  (setq whitespace-style
+        '(
+          face ; faceで可視化
+          trailing ; 行末
+          tabs ; タブ
+          spaces ; スペース
+          space-mark ; 表示のマッピング
+          tab-mark
+          ))
+  (setq whitespace-display-mappings
+        '(
+          (space-mark ?\u3000 [?\u2423])
+          (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])
+          ))
+  (setq whitespace-trailing-regexp  "\\([ \u00A0]+\\)$")
+  (setq whitespace-space-regexp "\\(\u3000+\\)")
+  (set-face-attribute 'whitespace-trailing nil
+                      :foreground "black"
+                      :background "color-226"
+                      :underline nil)
+  (set-face-attribute 'whitespace-tab nil
+                      :foreground "black"
+                      :background "color-226"
+                      :underline nil)
+  (set-face-attribute 'whitespace-space nil
+                      :foreground "black"
+                      :background "color-226"
+                      :underline nil)
+  (global-whitespace-mode t)
+  )
