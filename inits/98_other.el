@@ -13,11 +13,15 @@
 ;; Diredでの表示のカスタマイズ。"h"を追加することで、ファイルサイズが
 ;; 読みやすくなる。Stackoverflowで見つけた任意のカスタマイズをしたい場
 ;; 合dired上でC-u sのあとミニバッファで指定する
-(when (equal system-type 'darwin)
-  (setq dired-listing-switches "-alh"))
-;; -Tオプションをつけると、正常に動作しない（宿題）
-(when (equal system-type 'gnu/linux)
-  (setq dired-listing-switches "-alh --time-style=long-iso"))
+;; (MacOSの場合、GNU coreutilsのインストールが必須)
+(setq dired-listing-switches "-alhF --time-style=long-iso")
+
+;; ;; OS別にdiredの動作をわけるケース
+;; (when (equal system-type 'darwin)
+;;   (setq dired-listing-switches "-alh"))
+;; ;; MacOSのls(BSD)で-Tオプションをつけると、diredは正常に動作しない
+;; (when (equal system-type 'gnu/linux)
+;;   (setq dired-listing-switches "-alhF --time-style=long-iso"))
 
 ;; http://kakurasan.blogspot.jp/2015/05/dired-filemanager-renamer.html
 ;; y/nのどちらかのキーを押すだけでよくなる設定
