@@ -28,9 +28,6 @@
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
 ;; (ac-config-default)
 
-;; (add-to-list 'load-path "~/.emacs.d/auto-install")
-;; (require 'anything-startup)
-
 
 ;; (require 'multiple-cursors)
 ;; ;; When you have an active region that spans multiple lines, the following will
@@ -65,27 +62,6 @@
 ;; ;; |-----------|
 ;; ;; |           |tags-reset-tags-tables |タグテーブルをリセットします。次回タグ検索するとき、改めてTAGSファイルの指定が求められます。
 
-
-;; ;; TAGファイルの生成は、
-;; ;; "ctags -eR"で行う。
-
-
-;; (add-to-list 'default-mode-line-format
-;;                           '(:eval (count-lines-and-chars)))
-
-
-;; (put 'set-goal-column 'disabled nil)
-
-;; ;; ;; http://d.hatena.ne.jp/higepon/20060107/1136628498
-;; ;; ;; gtags使えないか確認
-;; ;; (autoload 'gtags-mode "gtags" "" t)
-;; ;; (setq gtags-mode-hook
-;; ;;       '(lambda ()
-;; ;;          (local-set-key "\M-t" 'gtags-find-tag)
-;; ;;          (local-set-key "\M-r" 'gtags-find-rtag)
-;; ;;          (local-set-key "\M-s" 'gtags-find-symbol)
-;; ;;          (local-set-key "\C-t" 'gtags-pop-stack)
-;; ;;          ))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
