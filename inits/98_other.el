@@ -81,6 +81,9 @@
 (setq frame-title-format
       (concat  "%b - emacs@" (system-name)))
 
+;; メニューバーを非表示にする
+(menu-bar-mode -1)
+
 ;; 全角スペースとかに色を付ける
 ;; 何色が表示できるか確認するには、M-x list-color-disply
 ;; todo: 要調整
