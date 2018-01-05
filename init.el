@@ -15,20 +15,6 @@
 (init-loader-load)
 
 
-;; (set-language-environment "Japanese")
-;; (prefer-coding-system 'utf-8)
-
-;; ;; turn on font-lock mode
-;; (when (fboundp 'global-font-lock-mode)
-;;   (global-font-lock-mode t))
-
-;; ;; auto-complete mode
-;; ;; http://cx4a.org/software/auto-complete/manual.ja.html
-;; (require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elisp/ac-dict")
-;; (ac-config-default)
-
-
 ;; (require 'multiple-cursors)
 ;; ;; When you have an active region that spans multiple lines, the following will
 ;; ;; add a cursor to each line:

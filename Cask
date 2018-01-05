@@ -56,3 +56,6 @@
 
 ;; (とりあえず)補完系はもう少し吟味する
 (depends-on "anything")
+
+;; オートコンプリート
+(depends-on "auto-complete")
