@@ -1,10 +1,8 @@
 ;; multi-shell : shellの欠点を補った新しいshell
 ;; M-x multi-shell-new : 新しいシェルバッファを作成
-;; (require 'multi-shell)
 (setq multi-shell-command "/usr/local/bin/bash")
 
 
-;;(require 'multi-term)
 (setq multi-term-program shell-file-name)
 
 (add-hook 'term-mode-hook

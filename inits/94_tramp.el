@@ -1,5 +1,4 @@
 ;; C+x f /ssh:user@host:/path/to/file
-(require 'tramp)
 (setq tramp-default-method "ssh")
 ;; TRAMPリモート接続時のPATH設定を改善させる
 ;; (例:リモートでのhg(version control)作業)

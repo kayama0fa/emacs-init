@@ -70,7 +70,7 @@
 ;;    例えば, ~/.emacs.el, ~/test/.emacs.el を開いたとすると,
 ;;    それぞれ .emacs, .emacs<test>となりますので，どのファイルが
 ;;    どういうファイルかが分かりやすくなります．
-;; (require 'uniquify)
+;; (use-package uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 ;; ミニバッファでの補完時に英語の大文字小文字を区別しない
@@ -88,8 +88,8 @@
 ;; 何色が表示できるか確認するには、M-x list-color-disply
 ;; todo: 要調整
 ;; 引用元: http://cortyuming.hateblo.jp/entry/2016/07/17/160238
-(progn
-  (require 'whitespace)
+(use-package whitespace
+  :config
   (setq whitespace-style
         '(
           face ; faceで可視化

@@ -1,4 +1,4 @@
-(require 'anything-startup)
+(use-package anything-startup)
 
 ;; 履歴buffer表示時のショートカット @ ?(ショートカットしたい対象のアルファベット)
 (setq anything-enable-shortcuts 'prefix-key)

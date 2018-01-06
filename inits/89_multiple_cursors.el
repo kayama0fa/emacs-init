@@ -1,5 +1,5 @@
 ;; TODO: 当面必要なさそうだけど、機会があれば。
-;; (require 'multiple-cursors)
+;; (use-package multiple-cursors)
 ;; ;; When you have an active region that spans multiple lines, the following will
 ;; ;; add a cursor to each line:
 
