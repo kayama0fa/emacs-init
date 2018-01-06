@@ -4,7 +4,6 @@
 (add-to-list 'interpreter-mode-alist '("perl5" . cperl-mode))
 (add-to-list 'interpreter-mode-alist '("miniperl" . cperl-mode))
 (setq cperl-indent-level 4)
-;; (setq font-lock-maximum-decoration nil)	;; 早くcperl-modeの解析を終わらせる（？）
 
 ;; Use 4 space indents via cperl mode
 (custom-set-variables
@@ -21,16 +20,12 @@
  '(safe-local-variable-values (quote ((encoding . utf-8))))
 )
 
-(setq auto-mode-alist
-      (append (list
-       '("\\.pl$"    . cperl-mode)
-       '("\\.cgi$"   . cperl-mode)
-       '("\\.pm$"    . cperl-mode)
-       '("\\.pl.in$" . cperl-mode)
-       '("\\.cgi.in$" . cperl-mode)
-       '("\\.pm.in$" . cperl-mode)
-       '("\\.t$"     . cperl-mode)
-       auto-mode-alist)))
+(add-to-list 'auto-mode-alist '("\\.pl\\'"    . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.cgi\\'"   . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.pm\\'"    . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.t\\'"     . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.pl.in\\'" . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.pm.in\\'" . cperl-mode))
 
 ;; (defun perltidy-region ()               ;選択regionをperltidy
 ;;    "Run perltidy on the current region."

@@ -4,7 +4,7 @@
 (setq multi-shell-command "/usr/local/bin/bash")
 
 
-(require 'multi-term)
+;;(require 'multi-term)
 (setq multi-term-program shell-file-name)
 
 (add-hook 'term-mode-hook

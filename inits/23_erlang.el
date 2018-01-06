@@ -11,3 +11,7 @@
 ;; (setq erlang-indent-line  4)
 ;; (setq erlang-indent-guard 4)
 
+(add-to-list 'auto-mode-alist '("\\.erl\\'" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.erl.in\\'" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.hrl\\'" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.hrl.in\\'" . erlang-mode))

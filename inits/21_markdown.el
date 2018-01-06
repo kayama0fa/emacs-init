@@ -9,4 +9,4 @@
  ;; If there is more than one, they won't work right.
  )
 
-
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
