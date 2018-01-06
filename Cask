@@ -54,8 +54,7 @@
 ;; Erlang mode
 (depends-on "erlang")
 
-;; (とりあえず)補完系はもう少し吟味する
-(depends-on "anything")
+(depends-on "helm")
 
 ;; オートコンプリート
 (depends-on "auto-complete")
