@@ -58,3 +58,5 @@
 
 ;; オートコンプリート
 (depends-on "auto-complete")
+
+(depends-on "helm-gtags")
