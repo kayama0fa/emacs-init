@@ -60,3 +60,8 @@
 (depends-on "auto-complete")
 
 (depends-on "helm-gtags")
+
+;; 利用候補(使い方含めて要調査)
+;; http://d.hatena.ne.jp/kiwanami/20100528/1275038929
+;; https://github.com/kiwanami/emacs-window-manager
+;; (depends-on "e2wm")
