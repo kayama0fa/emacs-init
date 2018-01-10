@@ -30,4 +30,12 @@
 ;; helm-gtags-pop-stack
 ;;     ジャンプ前の場所に戻る
 ;; helm-gtags-clear-stack
-;;     ジャンプ元を保存しているスタックをクリアする
+;;     保存しているジャンプ元のスタックをクリアする
+
+;; Memo2
+;; TAGSファイルの生成
+;;     $ gtags --gtagslabel=pygments -v --debug
+;;     (pygmentsを入れているなら有効にして、--debugは必要に応じて付ける
+;; 他のディレクトリのTAGSファイルを参照する
+;;     環境変数GTAGSLIBPATHを利用する
+;;
