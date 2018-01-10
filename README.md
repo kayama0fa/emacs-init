@@ -1,14 +1,10 @@
 # emacs-init
 
-my emacs init.el, inits/, Cask, etc.
+my emacs init.el, Cask, etc.
 
 ## TODO
 
-* emacsの設定整理
-    * caskの導入
-    * 設定ファイルの分割
-    * .emacsを.emacs.d/init.elに移動
-    * GitHubの使い方忘れたので、それの再勉強
+特になし。
 
 ## 構成
 
