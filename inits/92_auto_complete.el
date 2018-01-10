@@ -9,3 +9,4 @@
 
 ;; auto-completeをerlang-modeで有効にさせる
 (add-to-list 'ac-modes 'erlang-mode)
+(add-to-list 'ac-modes 'ruby-mode)
