@@ -39,3 +39,5 @@
 ;; 他のディレクトリのTAGSファイルを参照する
 ;;     環境変数GTAGSLIBPATHを利用する
 ;;
+
+(global-set-key "\M-*" 'pop-tag-mark)
