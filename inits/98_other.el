@@ -41,21 +41,7 @@
 
 ;;; カーソルのある行をハイライト表示する。
 ;;; http://www.happytrap.jp/blogs/2011/08/29/5877/
-(defface hlline-face
-  '((((class color)
-      (background dark))
-     (:background "dark slate gray"))
-    (((class color)
-      (background light))
-     ;; (:background "#CC0066")
-     ;; (:background "#F0D0E4") ;; ピンク寄りの薄紫
-     (:background "#D1F1CC") ;; 薄緑
-     )
-    (t
-     ()))
-  "*Face used by hl-line.")
-(setq hl-line-face 'hlline-face)
-(global-hl-line-mode)
+;;; -> 2018/10 動作が重くなるので利用停止
 
 ;; 対応するカッコをハイライトする
 (show-paren-mode 1)
