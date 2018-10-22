@@ -57,7 +57,8 @@
 (depends-on "helm")
 
 ;; オートコンプリート
-(depends-on "auto-complete")
+;; (depends-on "auto-complete")
+(depends-on "company")
 
 (depends-on "helm-gtags")
 
