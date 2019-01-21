@@ -68,6 +68,9 @@
 ;; for docker container
 (depends-on "docker-tramp")
 
+;; for asciidoc
+(depends-on "adoc-mode")
+
 ;; 利用候補(使い方含めて要調査)
 ;; http://d.hatena.ne.jp/kiwanami/20100528/1275038929
 ;; https://github.com/kiwanami/emacs-window-manager
