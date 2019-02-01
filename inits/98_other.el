@@ -106,3 +106,8 @@
                       :underline nil)
   (global-whitespace-mode t)
   )
+
+;; Colorilze M-x man
+(require 'man)
+(set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground "brightmagenta")
+(set-face-attribute 'Man-underline nil :inherit 'underline :foreground "cyan")
