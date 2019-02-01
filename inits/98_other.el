@@ -107,7 +107,6 @@
   (global-whitespace-mode t)
   )
 
-;; Colorilze M-x man
-(require 'man)
+;; Colorize man-mode.
 (set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground "brightmagenta")
 (set-face-attribute 'Man-underline nil :inherit 'underline :foreground "cyan")
