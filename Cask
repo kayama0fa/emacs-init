@@ -67,6 +67,7 @@
 
 ;; for docker container
 (depends-on "docker-tramp")
+(depends-on "dockerfile-mode")
 
 ;; for asciidoc
 (depends-on "adoc-mode")
