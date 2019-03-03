@@ -3,27 +3,6 @@
 
 ;; http://d.hatena.ne.jp/kitokitoki/20100516/p1
 ;; [emacs] diff-mode の紹介
-;; まずは色を変更します。色の名前は，各自の環境で利用できるものを指定して下さい。
-(add-hook 'diff-mode-hook
-          (lambda ()
-            (set-face-foreground 'diff-context-face "grey50")
-            (set-face-background 'diff-header-face "DarkOliveGreen1")
-;;             (set-face-underline-p 'diff-header-face t)
-            (set-face-foreground 'diff-file-header-face "MediumSeaGreen")
-            (set-face-background 'diff-file-header-face "DarkOliveGreen1")
-            (set-face-foreground 'diff-index-face "MediumSeaGreen")
-            (set-face-background 'diff-index-face "DarkOliveGreen1")
-            (set-face-foreground 'diff-hunk-header-face "medium orchid")
-            (set-face-background 'diff-hunk-header-face"plum")
-            (set-face-foreground 'diff-removed-face "deep pink")
-            (set-face-background 'diff-removed-face "plum")
-            (set-face-foreground 'diff-added-face "black")
-            (set-face-background 'diff-added-face "DarkOliveGreen1")
-            (set-face-foreground 'diff-changed-face "DeepSkyBlue4")
-            (set-face-background 'diff-changed-face "khaki1")
-            (set-face-background 'diff-refine-change "sandy brown")
-            )
-          )
 
 ;; 次に利用するコマンドにキーを割り当て直します。
 ;; 用意されたコマンド

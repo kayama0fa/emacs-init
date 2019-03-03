@@ -41,9 +41,10 @@
 ;; 最近のファイルを開く
 (depends-on "recentf-ext")
 
-;; solarized テーマ
+;; emacs theme
 ;; (depends-on "color-theme-solarized") ;; これはイマイチだった
 (depends-on "color-theme-sanityinc-solarized")
+(depends-on "zenburn-theme")
 
 ;; Markdown mode
 (depends-on "markdown-mode")
@@ -71,6 +72,9 @@
 
 ;; for asciidoc
 (depends-on "adoc-mode")
+
+;; Arduino
+(depends-on "arduino-mode")
 
 ;; 利用候補(使い方含めて要調査)
 ;; http://d.hatena.ne.jp/kiwanami/20100528/1275038929

@@ -31,9 +31,9 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
-;; http://ethanschoonover.com/solarized
-;; 目に優しいカラーテーマ。
-(load-theme 'sanityinc-solarized-light t)
+;; (load-theme 'sanityinc-solarized-light t)
+;; (load-theme 'sanityinc-solarized-dark t)
+(load-theme 'zenburn t)
 
 ;;; カーソルの位置が何文字目か、何行目かを表示する
 (column-number-mode t)
@@ -93,16 +93,19 @@
   (setq whitespace-trailing-regexp  "\\([ \u00A0]+\\)$")
   (setq whitespace-space-regexp "\\(\u3000+\\)")
   (set-face-attribute 'whitespace-trailing nil
-                      :foreground "black"
-                      :background "color-228"
+                      ;; :foreground "black"
+                      ;; :background "color-228"
+                      :background "color-243"
                       :underline nil)
   (set-face-attribute 'whitespace-tab nil
-                      :foreground "black"
-                      :background "color-228"
+                      ;; :foreground "black"
+                      ;; :background "color-228"
+                      :background "color-243"
                       :underline nil)
   (set-face-attribute 'whitespace-space nil
-                      :foreground "black"
-                      :background "color-228"
+                      ;; :foreground "black"
+                      ;; :background "color-228"
+                      :background "color-243"
                       :underline nil)
   (global-whitespace-mode t)
   )
