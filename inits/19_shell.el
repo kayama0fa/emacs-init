@@ -26,7 +26,9 @@
             ;; (define-key term-raw-map (kbd "C-v") scroll-up)
             ;; (define-key term-raw-map (kbd "M-v") scroll-down)
         (define-key term-raw-map (kbd "ESC ESC") 'term-send-raw)
-        (define-key term-raw-map (kbd "C-q") 'toggle-term-view)))
+        (define-key term-raw-map (kbd "C-q") 'toggle-term-view)
+        )
+      )
 
 (defun toggle-term-view () (interactive)
   (cond ((eq major-mode 'term-mode)
