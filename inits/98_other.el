@@ -39,9 +39,10 @@
 (column-number-mode t)
 (line-number-mode t)
 
-;;; カーソルのある行をハイライト表示する。
-;;; http://www.happytrap.jp/blogs/2011/08/29/5877/
-;;; -> 2018/10 動作が重くなるので利用停止
+(when (require 'hiwin nil t)
+  (hiwin-activate)                            ;; hiwin-modeを有効化
+  (set-face-background 'hiwin-face "color-239")   ;; 非アクティブバッファの背景色を設定
+  )
 
 ;; 対応するカッコをハイライトする
 (show-paren-mode 1)
